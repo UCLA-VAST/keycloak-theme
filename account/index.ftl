@@ -125,8 +125,7 @@
                 isReactLoading = true;
                 toggleReact();
                 if (!keycloak.authenticated) {
-                    document.getElementById("landingSignInButton").style.display='inline';
-                    document.getElementById("landingSignInLink").style.display='inline';
+                    keycloak.login();
                 } else {
                     document.getElementById("landingSignOutButton").style.display='inline';
                     document.getElementById("landingSignOutLink").style.display='inline';
