@@ -29,7 +29,7 @@
             <#if properties.logo?has_content>
             var brandImg = resourceUrl + '${properties.logo}';
             <#else>
-            var brandImg = resourceUrl + '/public/logo.svg';
+            var brandImg = resourceUrl + '/public/logo.png';
             </#if>
 
             <#if properties.logoUrl?has_content>
@@ -71,8 +71,6 @@
 
         <#if properties.favIcon?has_content>
         <link rel="icon" href="${resourceUrl}${properties.favIcon}" type="image/x-icon"/>
-        <#else>
-        <link rel="icon" href="${resourceUrl}/public/favicon.ico" type="image/x-icon"/>
         </#if>
 
         <script src="${authUrl}js/keycloak.js"></script>
@@ -148,7 +146,7 @@
                 <#if properties.logo?has_content>
                 <img src="${resourceUrl}${properties.logo}" alt="Logo" class="brand">
                 <#else>
-                <img src="${resourceUrl}/public/logo.svg" alt="Logo" class="brand">
+                <img src="${resourceUrl}/public/logo.png" alt="Logo" class="brand">
                 </#if>
                 <p>${msg("loadingMessage")}</p>
                 <div >
@@ -174,7 +172,7 @@
             <#if properties.logo?has_content>
             <img class="pf-c-brand brand" src="${resourceUrl}${properties.logo}" alt="Logo">
             <#else>
-            <img class="pf-c-brand brand" src="${resourceUrl}/public/logo.svg" alt="Logo">
+            <img class="pf-c-brand brand" src="${resourceUrl}/public/logo.png" alt="Logo">
             </#if>
           </a>
         </div>
