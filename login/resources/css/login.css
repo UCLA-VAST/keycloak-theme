@@ -1,7 +1,15 @@
+.login-pf {
+    background: white;
+}
+
 .login-pf body {
     background: white;
     background-size: cover;
     height: 100%;
+}
+
+.login-pf-page {
+   padding-bottom: 20px;
 }
 
 /*IE compatibility*/
